@@ -1,0 +1,100 @@
+doctype html
+html(ng-app='')
+  script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js')
+  head
+    script.
+      function validateFormList() {
+      console.log("Im here");
+      var a = document.forms["itemform"]["itemname"].value;
+      var b = document.forms["itemform"]["description"].value;
+      var c = document.forms["itemform"]["lookingfor"].value;
+      //var d = document.forms["itemform"]["email"].value;
+      if (a == "" || b == "" || c == ""){
+      alert("Requried Field empty!");
+      return false;}
+      
+      }
+      
+    title List Item
+    link(rel='shortcut icon', type='image/ico', href='images/TM.ico')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='style.css')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+  body(background='images/blue.jpg')
+    div
+      nav.navbar.navbar-inverse.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/', style='padding: 10px')
+              img(src='images/tm.ico', align='left', style='width: 35px; margin-bottom: 5px; margin-right: 10px')
+              |  TradeMe
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href='/aboutus') About Us
+              li
+                a(href='/contactus') Contact Us
+            form.navbar-form.navbar-left
+              .input-group
+                input.form-control(type='text', placeholder='Search')
+                .input-group-btn
+                  button.btn.btn-default(type='submit')
+                    i.glyphicon.glyphicon-search
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='/deletecookie')
+                  span.glyphicon.glyphicon-log-out
+                  |  Logout
+              li
+                a(href='/myprofile')  My Profile
+      br
+      br
+      br
+      .container-fluid
+        .jumbotron(style='background-color: #ffc272')
+          h1  Offer Item
+        form(name='offerform', method="post",  action="/offer", onsubmit: 'return validateFormList()')
+          .form-group
+            fieldset(style='background-color: #fff3db; border-radius: 30px; margin-left: 10px; padding:18px; margin-right: 10px')
+              label(for='itemwanted')
+                | Item wanted
+                sup(style='color: red') *
+                | :
+              br
+              input.form-control(type='text', name='itemwanted', placeholder='Enter Item wanted (written exactly)')
+              br
+              label(for='itemoffered')
+                | Item being offered
+                sup(style='color: red') *
+                | :
+              br
+              input.form-control(type='text', name='itemoffered', placeholder='Enter Item Name')
+              br
+              label(for='description')
+                | Description
+                sup(style='color: red') *
+                | :
+              br
+              input.form-control(type='text', name='description', placeholder='Describe Your Item')
+              br
+              label(for='photo')
+                | Link Photo
+              br
+              input.form-control(type='url', name='photo', placeholder='Enter photo Url')
+              br
+              label(for='condition')
+                  |Condition
+                  sup(style='color: red') *
+                  | :
+              input.form-control(type='text', name='condition', placeholder='Condition of item')
+              br
+              br
+              input(type='submit', value='Offer Item', align='center', style='width: 135px')
+            br

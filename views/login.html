@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><link rel="shortcut icon" type="image/ico" href="images/tm.ico"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script>function validateForm() {
+console.log("hello");
+var x = document.forms["loginform"]["username"].value;
+var y = document.forms["loginform"]["psw"].value;
+if (x == "") {
+alert("Username empty.");
+return false;}
+else if (y == "") {
+alert("Password empty. ");
+return false;}
+}</script></head><title>Log In</title><link rel="stylesheet" type="text/css" href="style.css"><body background="blue.jpg"><div><a href="/"><---Back to home</a></div><br><br><br><h1 align="center">Click <a href="/register" style="color: white;">here</a> if you do not have an account.</h1><br><form name="loginform" onsubmit="return validateForm()" method="post" action="/login"><div class="form-group"><fieldset style="border-radius: 40px; background-color: rgba(244,244,244,0.8   ); padding: 50px; margin-right: 350px; margin-left: 350px ;"><h1 align="center">Log In:</h1><br><label for="username" align="center"><span class="glyphicons glyphicons-user"></span>     Username:</label><br><input class="form-control" type="text" name="username" placeholder="Enter Username"><br><label for="password">Password:</label><br><input class="form-control" type="password" name="psw" placeholder="Enter Password"><div class="checkbox"><label><input type="checkbox"> Remember me</label></div><br><input type="submit" value="Login" align="center" style="width: 135px;"><h6 style="font-size: 8;"><a href="/forgot">Forgot password?</a></h6></fieldset></div></form></body></html>

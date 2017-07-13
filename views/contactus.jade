@@ -1,0 +1,80 @@
+    doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='shortcut icon', type='image/ico', href='images/TM.ico')
+    title Contact Us
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css') 
+  body(background='images/blue.jpg')
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/', style='padding: 10px')
+            img(src='images/tm.ico', align='left', style='width: 35px; margin-bottom: 5px; margin-right: 10px')
+            |  TradeMe
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/aboutus') About Us
+            li
+              a(href='/contactus') Contact Us
+          form.navbar-form.navbar-left
+            .input-group
+              input.form-control(type='text', placeholder='Search')
+              .input-group-btn
+                button.btn.btn-default(type='submit')
+                  i.glyphicon.glyphicon-search
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/register')
+                span.glyphicon.glyphicon-user
+                |  Sign Up
+            li
+              a(href='/login')
+                span.glyphicon.glyphicon-log-in
+                |  Login
+            li
+              a(href='/myprofile')  My Profile
+            li
+               a(href='/deletecookie')
+                 span.glyphicon.glyphicon-log-out
+                 |  Logout
+    br
+    br
+    br
+    br
+    br
+    #contact.container
+      h1.text-center(;='') Contact Us
+      br
+      .col-md-4
+        p.div2 For more information, contact: 
+        p.div2
+          span.glyphicon.glyphicon-phone
+          | Phone: 787 - 955 - 5415
+        p.div2
+          span.glyphicon.glyphicon-envelope
+          |   andrewkreisher@gmail.com
+        p.div2
+          span.glyphicon.glyphicon-envelope
+          |   kejia.lu.us@gmail.com
+      .col-md-8
+        .row
+          .col-sm-6.form-group
+            input#name.form-control(name='name', placeholder='Name', type='text', required='')
+          .col-sm-6.form-group
+            input#email.form-control(name='email', placeholder='Email', type='email', required='')
+        textarea#comments.form-control(name='comments', placeholder='Comment/Question/Concern:', rows='5')
+        br
+        .row
+          .col-md-12.form-group
+            input.btn.pull-right(type='submit')
+    br

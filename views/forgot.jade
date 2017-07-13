@@ -1,0 +1,21 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='shortcut icon', type='image/ico', href='TM.ico')
+    title  Forgot password 
+  body
+  .jumbotron.text-center(style="background: rgba(255, 153, 0, 0.7)")
+    h1  Forgot Password 
+    p Password Assistance
+    p Enter the Email that associated with your TradeMe account to reset your password
+    form.form-inline
+      .input-group
+        input.form-control(type='email', size='50', placeholder='Email Address', required='')
+        .input-group-btn
+          button.btn.btn-danger(type='button') Get your password
+  a(href='/')
+      img(src='images/tm.ico' style="margin-left: 600px")

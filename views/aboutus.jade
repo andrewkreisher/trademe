@@ -1,0 +1,64 @@
+doctype html
+html(lang='en', ng-app='')
+  script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='shortcut icon', type='image/ico', href='images/TM.ico')
+    title About Us
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css') 
+body(background='images/blue.jpg')
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/', style='padding: 10px')
+            img(src='images/tm.ico', align='left', style='width: 35px; margin-bottom: 5px; margin-right: 10px')
+            |  TradeMe
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/aboutus') About Us
+            li
+              a(href='/contactus') Contact Us
+          form.navbar-form.navbar-left
+            .input-group
+              input.form-control(type='text', placeholder='Search')
+              .input-group-btn
+                button.btn.btn-default(type='submit')
+                  i.glyphicon.glyphicon-search
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/register')
+                span.glyphicon.glyphicon-user
+                |  Sign Up
+            li
+              a(href='/login')
+                span.glyphicon.glyphicon-log-in
+                |  Login
+            li
+              a(href='/myprofile')  My Profile
+            li
+                a(href='/deletecookie')
+                  span.glyphicon.glyphicon-log-out
+                  |  Logout
+    br
+    br
+    br
+    br
+    br
+    h1(align = "center" style='font-size: 500%')
+        | Before the advent of paper money, metal coins, and other currencies, people did one thing: 
+    h1(align = "center" style='font-size: 700%; color: orange')
+        | Trade.
+    br
+    br
+    p(style='margin-left: 10px; margin-right: 10px; font-size: x-large')
+      .div3
+        | This website is for anyone who is tired of the traditional online stores. There are no set prices, and you have the option to list your items, search for items, or even ask around to see if anyone has what you seek. If you see something you want, you can negotiate prices or offer other items to trade. Both parties will continue to barter until both have clicked accept. This allows for better deals, and the ability to trade and not just buy. Finally, a place for true trade and barter. 
