@@ -1,0 +1,17 @@
+To get most of the features of the website to work on your own, you need to have a MongoDB shell open with the following: 
+
+A directory named "tmdata" 
+
+Within that directory, 3 collections named "items", "offers", and "users". 
+
+To do this inside MongoDB once open, all you have to do is enter the following: 
+
+> use tmdata
+> db.createCollection("items")
+> db.createCollection("offers")
+> db.createCollection("users")
+
+
+
+*Note*: This is for the main functions of the website, others such as contact us and forgot password are not included in this document. 
+For more information do not hesistate to contact me, andrewkreisher@gmail.com. 
