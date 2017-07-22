@@ -1,0 +1,131 @@
+To get most of the features of the website to work on your own, you need to have a MongoDB shell open with the following: 
+
+A directory named "tmdata" 
+
+Within that directory, 3 collections named "items", "offers", and "users". 
+
+To do this inside MongoDB once open, all you have to do is enter the following: 
+
+> use tmdata
+> db.createCollection("items")
+> db.createCollection("offers")
+> db.createCollection("users")
+
+
+
+*Note*: This is for the main functions of the website, others such as contact us and forgot password are not included in this document. 
+For more information do not hesistate to contact me, andrewkreisher@gmail.com. 
+
+
+
+Here is some sample data you can put into your mongoDB items collection: 
+
+{
+        "_id" : ObjectId("59668fbbeaef5d9605e633e0"),
+        "name" : "Mac Laptop",
+        "description" : "2009 macbook pro",
+        "condition" : "used",
+        "lookingfor" : "Anything about the same value",
+        "photo" : "https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/m/bp/mbp15touch/gray/mbp15touch-gray-select-201610?wid=452&hei=420&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1496611018929",
+        "username" : "andrewdood"
+}
+{
+        "_id" : ObjectId("596690d2eaef5d9605e633e1"),
+        "name" : "Surface Book",
+        "description" : "Bad computer",
+        "condition" : "Perfect",
+        "lookingfor" : "MacBook Pro",
+        "photo" : "",
+        "username" : "hbromund18"
+}
+{
+        "_id" : ObjectId("59669276eaef5d9605e633e3"),
+        "name" : "Un-ban League Account",
+        "description" : "Un-ban your league account",
+        "condition" : "Fresh",
+        "lookingfor" : "New Job",
+        "photo" : "https://bot.gyazo.com/5f2b6c748191b7aadefbc1ea13ae6d0e.png",
+        "username" : "jenny711"
+}
+{
+        "_id" : ObjectId("596693fd14c20b8106290a86"),
+        "name" : "Cookie",
+        "description" : "It is a cookie",
+        "condition" : "Un-eaten",
+        "lookingfor" : "Better cookie",
+        "photo" : "",
+        "username" : "cody"
+}
+{
+        "_id" : ObjectId("5966970f14c20b8106290a88"),
+        "name" : "laptop",
+        "description" : "My laptop",
+        "condition" : "used",
+        "lookingfor" : "nothing",
+        "photo" : "",
+        "username" : "Shao"
+}
+{
+        "_id" : ObjectId("5966979214c20b8106290a8a"),
+        "name" : "Website",
+        "description" : "Looks okay, functions very badly",
+        "condition" : "Questionable",
+        "lookingfor" : "A better website",
+        "photo" : "",
+        "username" : "jade_lundy"
+}
+{
+        "_id" : ObjectId("596697eb14c20b8106290a8b"),
+        "name" : "Tesla",
+        "description" : "Model S",
+        "condition" : "New",
+        "lookingfor" : "a less environmentally friendly car",
+        "photo" : "",
+        "username" : "andrewdood"
+}
+{
+        "_id" : ObjectId("59669a4014c20b8106290a8d"),
+        "name" : "My Soul",
+        "description" : "It is empty and used up",
+        "condition" : "poor",
+        "lookingfor" : "Love at first sight",
+        "photo" : "",
+        "username" : "PaulNn15"
+}
+{
+        "_id" : ObjectId("59670fe36c1d7c950952755d"),
+        "name" : "In-n-out  Burger",
+        "description" : "double double animal style",
+        "condition" : "Half-eaten",
+        "lookingfor" : "McDonalds fries",
+        "photo" : "http://aht.seriouseats.com/assets_c/2010/07/20100723-in-n-out-primary-thumb-625xauto-101967.jpg",
+        "username" : "jane420"
+}
+{
+        "_id" : ObjectId("596716b43929573b0de4c5f6"),
+        "name" : "Cool Book",
+        "description" : "About some aliens",
+        "condition" : "new",
+        "lookingfor" : "Another cool book",
+        "photo" : "",
+        "username" : "andrewdood"
+}
+{
+        "_id" : ObjectId("5967170d3929573b0de4c5f8"),
+        "name" : "My Kidney",
+        "description" : "A fully functional kidney Blood type A-",
+        "condition" : "40 years of use",
+        "lookingfor" : "An appendix",
+        "photo" : "",
+        "username" : "coolkid44"
+}
+
+{
+        "_id" : ObjectId("5967acf1dae3ae6e154bea29"),
+        "name" : "Grip Master",
+        "description" : "Black, springy, long and tough",
+        "condition" : "Good, but used",
+        "lookingfor" : "A space pen",
+        "photo" : "",
+        "username" : "Nabih420"
+}
