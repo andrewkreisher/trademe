@@ -3,3 +3,5 @@ This is my final project for the Stanford SPCS program for the Web Technology co
 
 **Important:**
 If you want to test the websites functionality (register, login, list, offer, etc.) please look at dbSchema.txt for the database Schema used in mongo. 
+
+Contact information: andrewkreisher@gmail.com
