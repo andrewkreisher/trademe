@@ -4,4 +4,4 @@ This is my final project for the Stanford SPCS program for the Web Technology co
 **Important:**
 If you want to test the websites functionality (register, login, list, offer, etc.) please look at the 'dbSchema + Sample Data' document for the database Schema used in MongoDB and some sample data.  
 
-Contact information: andrewkreisher@gmail.com
+Contact information: andrewkreisher@gmail.com 
